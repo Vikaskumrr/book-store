@@ -1,26 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Card from './components/card/card';
+import './styles/global.scss'; 
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App: React.FC = () => {
+    return (
+        <div className="container"> 
+            <Card title="Explore Books">
+                {/* Content for Explore Books card */}
+                <p>Discover a world of reading!</p>
+                {/* ...add buttons or links here */}
+            </Card>
+
+            <Card title="Your Collection">
+                {/* Content for Your Collection card */}
+                <p>Your saved books will appear here.</p>
+                {/* ...add book list or grid here */}
+            </Card>
+        </div>
+    );
+};
 
 export default App;
