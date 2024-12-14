@@ -1,17 +1,18 @@
+// src/components/Card/Card.scss 
 .card {
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 8px;
     padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
-
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 20px; // Add some spacing between cards
+  
     .card-title {
-        font-size: 1.5rem;
-        margin-bottom: 10px;
+      font-size: 1.5rem;
+      margin-bottom: 15px;
     }
-
+  
     .card-content {
-        // Style the card content area
-        color: red; 
+      /* Add styles for content inside the card if needed */
+      color: #000;
     }
-}
+  }
